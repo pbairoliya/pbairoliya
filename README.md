@@ -16,16 +16,16 @@ runs end-to-end in CI with the network, the model and the credentials stubbed ou
 
 ---
 
-**[On-device tools](https://pb0224.github.io/projects/on-device-tools.html)** — three programs
+**[On-device tools](https://pbairoliya.github.io/projects/on-device-tools.html)** — three programs
 sharing one OCR + local-LLM core
-&nbsp;&nbsp;·&nbsp; [daily-lookback](https://github.com/pb0224/daily-lookback) — Calendar, Gmail
+&nbsp;&nbsp;·&nbsp; [daily-lookback](https://github.com/pbairoliya/daily-lookback) — Calendar, Gmail
 and iMessage into one generated daily note
-&nbsp;&nbsp;·&nbsp; [grocery-receipts](https://github.com/pb0224/grocery-receipts) — scan any
+&nbsp;&nbsp;·&nbsp; [grocery-receipts](https://github.com/pbairoliya/grocery-receipts) — scan any
 receipt, get structured expenses and pantry stock
-&nbsp;&nbsp;·&nbsp; [screenshot-organizer](https://github.com/pb0224/screenshot-organizer) — sort
+&nbsp;&nbsp;·&nbsp; [screenshot-organizer](https://github.com/pbairoliya/screenshot-organizer) — sort
 a messy Desktop by reading what's in the images
 
-**[lc](https://pb0224.github.io/projects/lc.html)** — a LeetCode workflow where an Obsidian note
+**[lc](https://pbairoliya.github.io/projects/lc.html)** — a LeetCode workflow where an Obsidian note
 is the source of truth, reconciled with a Git repo, with spaced-repetition reviews
 
 ---
@@ -36,5 +36,5 @@ is the source of truth, reconciled with a Git repo, with spaced-repetition revie
 AWS Certified Solutions Architect – Associate &nbsp;·&nbsp; B.S. Computer Science + B.S. Applied
 Mathematics, NC State (Park Scholar, 4.0)
 
-[pb0224.github.io](https://pb0224.github.io) &nbsp;·&nbsp;
+[pbairoliya.github.io](https://pbairoliya.github.io) &nbsp;·&nbsp;
 [LinkedIn](https://linkedin.com/in/pbairol) &nbsp;·&nbsp; pratik0520@gmail.com
