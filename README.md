@@ -27,11 +27,12 @@ runs end-to-end in CI with the network, the model and the credentials stubbed ou
   <img alt="AWS SAA" src="https://img.shields.io/badge/AWS%20Certified-Solutions%20Architect%20Associate-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white">
 </p>
 
-<img alt="GitHub stats" height="150" src="https://github-readme-stats.vercel.app/api?username=pbairoliya&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&theme=default#gh-light-mode-only">
-<img alt="Top languages" height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pbairoliya&layout=compact&hide_border=true&langs_count=8&theme=default#gh-light-mode-only">
-<img alt="GitHub stats" height="150" src="https://github-readme-stats.vercel.app/api?username=pbairoliya&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&theme=dark&bg_color=0d1117#gh-dark-mode-only">
-<img alt="Top languages" height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pbairoliya&layout=compact&hide_border=true&langs_count=8&theme=dark&bg_color=0d1117#gh-dark-mode-only">
 
+
+<img alt="Contributions by year" src="https://raw.githubusercontent.com/pbairoliya/pbairoliya/main/generated/contributions-light.svg#gh-light-mode-only" width="420">
+<img alt="Languages" src="https://raw.githubusercontent.com/pbairoliya/pbairoliya/main/generated/languages-light.svg#gh-light-mode-only" width="420">
+<img alt="Contributions by year" src="https://raw.githubusercontent.com/pbairoliya/pbairoliya/main/generated/contributions-dark.svg#gh-dark-mode-only" width="420">
+<img alt="Languages" src="https://raw.githubusercontent.com/pbairoliya/pbairoliya/main/generated/languages-dark.svg#gh-dark-mode-only" width="420">
 
 ---
 
