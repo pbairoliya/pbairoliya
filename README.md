@@ -1,82 +1,70 @@
-<h3 align="center">Pratik Bairoliya</h3>
-<p align="center">
-  <b>Every night, a bank has to close its books. I own that job.</b><br>
-  <sub>Full-stack software engineer · Capital One · Go, Temporal, Kubernetes, Spark</sub>
-</p>
+### Pratik Bairoliya
 
----
+I work at Capital One on the system that closes the bank's books every night. Millions of accounts,
+one shot, no do-overs before morning — so most of my time goes into making a very large batch job
+fail early and loudly instead of quietly at 4am. That's the job. This page is everything else.
 
-At **Capital One** I own the nightly **end-of-day close** — posting, settlement and ledger cutoff
-for Card, Bank and Financial Service accounts, on the platform replacing the third-party cores the
-bank ran on for decades.
+Mostly I like building small things that are annoyingly reliable.
 
-It runs on **Temporal**. It publishes **99M+ Card accounts** downstream before morning. It gets
-**one shot** — there is no re-running the day. Most of my job is making a very large batch fail
-loudly and early instead of quietly at 4am.
+**Stuff I built because I wanted it to exist**
 
-**Shipped, mine end to end:**
+[daily-lookback](https://github.com/pbairoliya/daily-lookback) writes my morning note before I wake
+up — calendar, email, texts, one page. It runs entirely on my laptop, because I wasn't about to
+ship my iMessage history to somebody's API. The tricky part wasn't the model, it was making it
+boring: if it misses a night and runs twice, you get the same note, not two.
 
-- 🏗️ The ledger's **batch write path in Go** — empty repo to production. Every nightly cycle runs through it.
-- 🔑 A **block-allocation ID service**: one call reserves a range, taking per-ID contention off bulk account opens.
-- 🔍 The **PySpark reconciliation** that diffs day-over-day aggregates and alerts *before* a bad cycle ships.
-- 📉 Cut data egress on the 99M-account publish by performance-tuning **Hive sort** on **AWS EMR**.
-- 🔐 Rolled **proof-of-possession tokens** across Card and Bank endpoints — a stolen token is useless without the key that minted it.
-- 📡 **OpenTelemetry + Splunk** tracing, so a stalled stage pages on-call mid-run instead of at cutoff.
+[grocery-receipts](https://github.com/pbairoliya/grocery-receipts) started because I kept buying
+cumin I already had. Photograph a receipt, it reads it, sorts the groceries, tracks what's about to
+expire, and refuses to count the same receipt twice no matter how many times I scan it.
 
-Promoted **SWE I → SWE II in a year**.
+[screenshot-organizer](https://github.com/pbairoliya/screenshot-organizer) cleans a desktop by
+actually looking at the screenshots. It asks before it moves anything, which I learned to add the
+hard way.
 
-<img alt="Contributions by year" src="https://raw.githubusercontent.com/pbairoliya/pbairoliya/main/generated/contributions-light.svg#gh-light-mode-only" width="420"><img alt="Languages" src="https://raw.githubusercontent.com/pbairoliya/pbairoliya/main/generated/languages-light.svg#gh-light-mode-only" width="420">
-<img alt="Contributions by year" src="https://raw.githubusercontent.com/pbairoliya/pbairoliya/main/generated/contributions-dark.svg#gh-dark-mode-only" width="420"><img alt="Languages" src="https://raw.githubusercontent.com/pbairoliya/pbairoliya/main/generated/languages-dark.svg#gh-dark-mode-only" width="420">
+[lc](https://pbairoliya.github.io/projects/lc.html) runs my LeetCode habit out of my notes and
+pushes them to a repo every night. There are [600+ solutions](https://github.com/pbairoliya/leetcode-archive)
+in there from 2023–24, which says more about my evenings than I'd like.
 
-## 🧠 The idea I keep building around
+**Stuff I built to see if I could**
 
-> **The model proposes, deterministic code decides.**
+I wrote [a shell with no standard library](https://github.com/pbairoliya/csc246-operating-systems) —
+no strlen, no atoi, write your own. Then I solved the same problem five times in a row on purpose:
+processes and pipes, threads, semaphores, monitors, and finally CUDA, which did it in 1.668 seconds
+on my RTX 2070 and felt like cheating. Same repo has a Scrabble server that holds a thread per
+player.
 
-Categories an LLM suggests get thrown away and reassigned by fixed rules, so a scheduled job
-produces the same thing today as yesterday. Decisions live in append-only stores outside the
-generated text, so a rerun is **idempotent** instead of destructive. An index is the source of
-truth, never the files. Everything runs end-to-end in CI with the network, the model and the
-credentials stubbed out.
+I built [a hash map in C](https://github.com/pbairoliya/csc230-c-software-tools) that stores any
+type you want, which C doesn't do, so you fake it with a struct full of function pointers. Nobody
+tells you at the time that you're hand-writing a vtable.
 
-Same instinct as the day job: make the nondeterministic part small, and make everything around it
-provable.
+I [broke a repeating-key XOR cipher](https://github.com/pbairoliya/csc474-network-security) without
+being told the key length — you can get it statistically, which is the closest computer science has
+come to magic in my experience. Then I wrote a port scanner, then the 39-line thing that catches
+the port scanner.
 
-## ⚡ Things I've built
+And [a game AI](https://github.com/pbairoliya/csc484-game-ai) that wanders a room, decides it's
+hungry, and A\*s its way to food.
 
-**Local-first LLM tools** — [read how they fit together →](https://pbairoliya.github.io/projects/on-device-tools.html)
+**Where it started**
 
-| | |
-|---|---|
-| [**daily-lookback**](https://github.com/pbairoliya/daily-lookback) | Calendar + Gmail + iMessage → one generated morning note. 100% on-device. A missed night rebuilds the same note instead of duplicating it. |
-| [**grocery-receipts**](https://github.com/pbairoliya/grocery-receipts) | Photograph a receipt → structured expenses and pantry stock. Fingerprinted ingest, so a rescan can't double-count. |
-| [**screenshot-organizer**](https://github.com/pbairoliya/screenshot-organizer) | Sorts a messy Desktop by reading what's *in* the images, human-in-the-loop before anything moves. |
+[first-code](https://github.com/pbairoliya/first-code) is the C++ I wrote in high school, untouched.
+The board game Trouble, rebuilt six times because I didn't know about version control yet. An
+expression tree attempted four times for the same reason. And this, at the top of one file:
 
-**Systems, the hard way**
+```cpp
+#include "E:\myheader.h"
+```
 
-| | |
-|---|---|
-| [**csc246**](https://github.com/pbairoliya/csc246-operating-systems) | A shell written without libc. Max-subarray solved five ways — fork/pipe, threads, semaphores, monitors, **CUDA** (1.668s on an RTX 2070). A 586-line multithreaded Scrabble server with RSA auth. |
-| [**csc230**](https://github.com/pbairoliya/csc230-c-software-tools) | A generic hash map in C — function-pointer **vtables written by hand**, because C has no generics. Base64 from the bits up. |
-| [**csc474**](https://github.com/pbairoliya/csc474-network-security) | A repeating-key XOR breaker that recovers the key length by **index of coincidence**. Plus a port scanner and the 39-line sliding-window detector that catches it. |
-| [**csc484**](https://github.com/pbairoliya/csc484-game-ai) | Steering behaviours that compose by summing accelerations, A\* with swappable heuristics, and a decision tree driving both. |
-| [**customBash**](https://github.com/pbairoliya/customBash) · [**leetcode-archive**](https://github.com/pbairoliya/leetcode-archive) | A Unix shell in C++. 600+ solutions from 2023–24. |
+A drive letter. On a computer I no longer own. I was very proud of it.
 
-<img alt="Stack" src="https://raw.githubusercontent.com/pbairoliya/pbairoliya/main/generated/stack-light.svg#gh-light-mode-only" width="420">
-<img alt="Stack" src="https://raw.githubusercontent.com/pbairoliya/pbairoliya/main/generated/stack-dark.svg#gh-dark-mode-only" width="420">
+**Off the keyboard**
 
-## 📜 Receipts
+I ran [InspireNC](https://inspirenc.us) for five years, a student-run nonprofit that gets FIRST
+Robotics into NC schools, and captained team 6908 before that. I went to NC State on a Park
+Scholarship, came out with degrees in CS and applied math, and still run the Krispy Kreme Challenge
+every year, which involves a dozen donuts and questionable judgment.
 
-**AWS Certified Solutions Architect – Associate** · **B.S. Computer Science + B.S. Applied
-Mathematics**, NC State — **4.0**, **Park Scholar** (full ride, top 1% of applicants) · Chairman of
-[InspireNC](https://inspirenc.us), teaching FIRST Robotics in NC schools
-
----
-
-<p align="center">
-  <b>I'd rather talk than be screened.</b><br>
-  Backend and full-stack work where correctness is the hard part — ledgers, payments,<br>
-  anything that has to be right the first time.<br><br>
-  <a href="mailto:pratik0520@gmail.com">pratik0520@gmail.com</a> ·
-  <a href="https://pbairoliya.github.io">pbairoliya.github.io</a> ·
-  <a href="https://linkedin.com/in/pbairol">LinkedIn</a>
-</p>
+If any of this is your kind of thing, I'd rather talk than be screened —
+[pratik0520@gmail.com](mailto:pratik0520@gmail.com) ·
+[pbairoliya.github.io](https://pbairoliya.github.io) ·
+[LinkedIn](https://linkedin.com/in/pbairol)
