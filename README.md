@@ -1,12 +1,17 @@
 ### Pratik Bairoliya
 
+<a href="https://pbairoliya.github.io"><img src="https://img.shields.io/badge/site-pbairoliya.github.io-111?style=flat-square" alt="site"></a>
+<img src="https://img.shields.io/badge/AWS-Solutions%20Architect%20Associate-FF9900?style=flat-square" alt="AWS SA Associate">
+<img src="https://img.shields.io/badge/NC%20State-Park%20Scholar-CC0000?style=flat-square" alt="Park Scholar">
+<img src="https://img.shields.io/badge/ask%20me%20about-ledgers%20at%204am-6d4bd8?style=flat-square" alt="ask me about ledgers">
+
 I work at Capital One on the system that closes the bank's books every night. Millions of accounts,
 one shot, no do-overs before morning — so most of my time goes into making a very large batch job
 fail early and loudly instead of quietly at 4am. That's the job. This page is everything else.
 
 Mostly I like building small things that are annoyingly reliable.
 
-**Stuff I built because I wanted it to exist**
+**Stuff I built because I like solving problems and wanted my life easier**
 
 [daily-lookback](https://github.com/pbairoliya/daily-lookback) writes my morning note before I wake
 up — calendar, email, texts, one page. It runs entirely on my laptop, because I wasn't about to
@@ -64,7 +69,14 @@ Robotics into NC schools, and captained team 6908 before that. I went to NC Stat
 Scholarship, came out with degrees in CS and applied math, and still run the Krispy Kreme Challenge
 every year, which involves a dozen donuts and questionable judgment.
 
-If any of this is your kind of thing, I'd rather talk than be screened —
-[pratik0520@gmail.com](mailto:pratik0520@gmail.com) ·
+**Still here?**
+
+Then one of four things is true. You're hiring, in which case hello, I'd rather talk than be
+screened. You're a recruiter checking whether the resume was exaggerating — it wasn't, the CUDA
+thing really did take 1.668 seconds. You're a student looking for how any of this works, in which
+case take whatever's useful, it's all public for that reason. Or you're my mom, showing someone
+this page, in which case hi Mom.
+
+Whichever one it is: [pratik0520@gmail.com](mailto:pratik0520@gmail.com) ·
 [pbairoliya.github.io](https://pbairoliya.github.io) ·
 [LinkedIn](https://linkedin.com/in/pbairol)
