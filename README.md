@@ -1,8 +1,14 @@
 ### Pratik Bairoliya
 
 Software engineer at **Capital One**, on the team replacing the legacy third-party cores with
-Prometheus FINCORE. I own nightly **End-of-Day settlement** for Card, Bank and Financial Service
-accounts — millions of accounts, every night, and it has to be right by morning.
+Prometheus FINCORE. I own the nightly **end-of-day close** — posting, settlement and ledger
+cutoff for Card, Bank and Financial Service accounts. It runs on **Temporal**, it publishes
+**99M+ Card accounts** downstream before morning, and it has to be right the first time.
+
+Things I've built there: the ledger's batch write path in **Go**, from an empty repo to every
+nightly cycle running through it. A **block-allocation ID service** so bulk account opens stop
+contending for a shared sequence. The **PySpark/Databricks** reconciliation that compares
+day-over-day aggregates and alerts before a bad cycle ships.
 
 Outside work I build **local-first tools**: small systems that use a language model but run
 entirely on your machine, so nothing personal leaves it. The part I find interesting isn't the
@@ -28,10 +34,21 @@ a messy Desktop by reading what's in the images
 **[lc](https://pbairoliya.github.io/projects/lc.html)** — a LeetCode workflow where an Obsidian note
 is the source of truth, reconciled with a Git repo, with spaced-repetition reviews
 
+**Systems and algorithms**
+&nbsp;&nbsp;·&nbsp; [customBash](https://github.com/pbairoliya/customBash) — a Unix shell in C++:
+process control, piping, redirection
+&nbsp;&nbsp;·&nbsp; [ai-cops-and-robbers](https://github.com/pbairoliya/ai-cops-and-robbers) —
+pursuit-evasion in C++/SFML, two agents running different search algorithms
+&nbsp;&nbsp;·&nbsp; [ai-arcade-games](https://github.com/pbairoliya/ai-arcade-games) — a Deep
+Q-Network agent that learns Snake
+&nbsp;&nbsp;·&nbsp; [leetcode-archive](https://github.com/pbairoliya/leetcode-archive) — 600+
+solutions, 2023–2024
+
 ---
 
 `Go` `Python` `Java` `TypeScript` &nbsp;·&nbsp; `Kubernetes` `Temporal` `Docker` `Terraform`
-`Argo` `Helm` &nbsp;·&nbsp; `AWS (EMR, S3, DynamoDB)` `Hive` `Postgres` `Neo4j`
+`Argo CD` `Helm` &nbsp;·&nbsp; `AWS (EMR, S3, DynamoDB)` `Hive` `Databricks` `Spark` `Neo4j`
+&nbsp;·&nbsp; `OpenTelemetry` `Splunk`
 
 AWS Certified Solutions Architect – Associate &nbsp;·&nbsp; B.S. Computer Science + B.S. Applied
 Mathematics, NC State (Park Scholar, 4.0)
