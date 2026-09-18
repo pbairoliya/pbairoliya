@@ -1,8 +1,11 @@
 ### Pratik Bairoliya
 
 <a href="https://pbairoliya.github.io"><img src="https://img.shields.io/badge/site-pbairoliya.github.io-111?style=flat-square" alt="site"></a>
-<img src="https://img.shields.io/badge/AWS-Solutions%20Architect%20Associate-FF9900?style=flat-square" alt="AWS SA Associate">
-<img src="https://img.shields.io/badge/NC%20State-Park%20Scholar-CC0000?style=flat-square" alt="Park Scholar">
+<img src="https://img.shields.io/badge/ships-99M%2B%20accounts%20nightly-1f5fd6?style=flat-square" alt="99M accounts nightly">
+<img src="https://img.shields.io/badge/fastest%20thing%20I%20wrote-1.668s%20on%20CUDA-76B900?style=flat-square" alt="CUDA 1.668s">
+<img src="https://img.shields.io/badge/LeetCode-600%2B%20solved-FFA116?style=flat-square" alt="600+ LeetCode">
+<img src="https://img.shields.io/badge/AWS-Solutions%20Architect-FF9900?style=flat-square" alt="AWS SA Associate">
+<img src="https://img.shields.io/badge/NC%20State-Park%20Scholar%20%C2%B7%204.0-CC0000?style=flat-square" alt="Park Scholar, 4.0">
 <img src="https://img.shields.io/badge/ask%20me%20about-ledgers%20at%204am-6d4bd8?style=flat-square" alt="ask me about ledgers">
 
 I work at Capital One on the system that closes the bank's books every night. Millions of accounts,
@@ -68,6 +71,15 @@ I ran [InspireNC](https://inspirenc.us) for five years, a student-run nonprofit 
 Robotics into NC schools, and captained team 6908 before that. I went to NC State on a Park
 Scholarship, came out with degrees in CS and applied math, and still run the Krispy Kreme Challenge
 every year, which involves a dozen donuts and questionable judgment.
+
+**Right now**
+
+Learning the parts of the stack I only half know: writing a log-structured key-value store to
+understand what a database is actually doing, and reading enough Raft to stop hand-waving about
+consensus. Both will end up in here when they're worth showing.
+
+<img alt="Stack" src="https://raw.githubusercontent.com/pbairoliya/pbairoliya/main/generated/stack-light.svg#gh-light-mode-only" width="430">
+<img alt="Stack" src="https://raw.githubusercontent.com/pbairoliya/pbairoliya/main/generated/stack-dark.svg#gh-dark-mode-only" width="430">
 
 **Still here?**
 
