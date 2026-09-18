@@ -1,15 +1,21 @@
 ## Pratik Bairoliya
 
-Software engineer at **Capital One**, on the team replacing the legacy third-party cores with
-Prometheus FINCORE. I own the nightly **end-of-day close** — posting, settlement and ledger
-cutoff for Card, Bank and Financial Service accounts. It runs on Temporal, it publishes 99M+
-Card accounts downstream before morning, and it gets one shot to be right.
+**Full-stack software engineer at Capital One.** I work across the whole stack — Vue and Angular
+front ends, Spring Boot and Go services, Spark and Hive pipelines, Kubernetes underneath — and
+right now I'm pointed at the deep end of it.
 
-Most of that job is making a very large batch fail loudly and early instead of quietly at the
-last minute. The ledger's batch write path is mine, in Go, from an empty repo to every nightly
-cycle running through it. So is the block-allocation ID service that stopped bulk account opens
-contending for a shared sequence, and the PySpark reconciliation that compares day-over-day
-aggregates and alerts before a bad cycle ships.
+I own the nightly **end-of-day close**: posting, settlement and ledger cutoff for Card, Bank and
+Financial Service accounts, on the platform replacing Capital One's legacy third-party cores. It
+runs on Temporal, it publishes 99M+ Card accounts downstream before morning, and it gets one shot
+to be right. Most of that job is making a very large batch fail loudly and early instead of
+quietly at the last minute.
+
+Mine end to end: the ledger's batch write path in Go, from an empty repo to every nightly cycle
+running through it. The block-allocation ID service that stopped bulk account opens contending
+for a shared sequence. The PySpark reconciliation that compares day-over-day aggregates and
+alerts before a bad cycle ships. Earlier, the military rewards catalog — Vue.js on Spring Boot
+and DynamoDB, 2.8x faster than the SharePoint it replaced — and a mainframe-to-AWS migration at
+Fidelity with an Angular front end over Java services.
 
 Off the clock I build **local-first tools** — small systems that use a language model but run
 entirely on your own machine. The interesting part isn't the prompting, it's making something
@@ -26,6 +32,15 @@ that guesses behave like something that doesn't.
 
 <img alt="Stack" src="https://raw.githubusercontent.com/pbairoliya/pbairoliya/main/generated/stack-light.svg#gh-light-mode-only" width="420">
 <img alt="Stack" src="https://raw.githubusercontent.com/pbairoliya/pbairoliya/main/generated/stack-dark.svg#gh-dark-mode-only" width="420">
+
+### Full-stack
+
+| | |
+|---|---|
+| **[fullstackAssistant](https://github.com/pbairoliya/fullstackAssistant)** | Task assistant end to end — JavaScript front end, Node API, MongoDB, a Claude enrichment step, and a Discord bot as a second client. |
+| **[pbairoliya.github.io](https://github.com/pbairoliya/pbairoliya.github.io)** | This site, hand-built: no framework, no build step, theme-aware, and it scores clean on accessibility. |
+| **[portfolio-v1](https://github.com/pbairoliya/portfolio-v1)** | The 2024 version, kept for the before-and-after. |
+| **[first-website](https://github.com/pbairoliya/first-website)** | 2018, one HTML file, everything done the long way. Where it started. |
 
 ### On-device tools
 

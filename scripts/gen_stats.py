@@ -119,9 +119,11 @@ def svg_languages(langs, repo_count, theme, path):
 # Grouped by what the thing does, not by a flat alphabetical list. Order inside
 # each row is roughly how central it is to my day job.
 STACK = [
-    ("Languages", ["Go", "Python", "Java", "SQL", "TypeScript", "C++"]),
+    ("Languages", ["Go", "Python", "Java", "TypeScript", "SQL", "C++"]),
+    ("Frontend", ["Vue.js", "Angular", "Node.js", "HTML/CSS", "Pinia", "Fastify"]),
+    ("Backend", ["Spring Boot", "REST APIs", "MongoDB", "PostgreSQL", "DynamoDB", "Neo4j"]),
     ("Platform", ["Kubernetes", "Temporal", "Docker", "Terraform", "Argo CD", "Helm", "AWS"]),
-    ("Data", ["Spark", "Databricks", "Hive", "EMR", "DynamoDB", "Neo4j"]),
+    ("Data", ["Spark", "Databricks", "Hive", "EMR"]),
     ("Observability", ["OpenTelemetry", "Splunk"]),
 ]
 
