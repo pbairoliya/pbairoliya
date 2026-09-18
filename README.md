@@ -71,12 +71,7 @@ every year, which involves a dozen donuts and questionable judgment.
 
 **Still here?**
 
-Then one of four things is true. You're hiring, in which case hello, I'd rather talk than be
-screened. You're a recruiter checking whether the resume was exaggerating — it wasn't, the CUDA
-thing really did take 1.668 seconds. You're a student looking for how any of this works, in which
-case take whatever's useful, it's all public for that reason. Or you're my mom, showing someone
-this page, in which case hi Mom.
-
-Whichever one it is: [pratik0520@gmail.com](mailto:pratik0520@gmail.com) ·
+[pratik0520@gmail.com](mailto:pratik0520@gmail.com) ·
 [pbairoliya.github.io](https://pbairoliya.github.io) ·
-[LinkedIn](https://linkedin.com/in/pbairol)
+[LinkedIn](https://linkedin.com/in/pbairol) ·
+Raleigh / McLean
