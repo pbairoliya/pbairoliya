@@ -20,6 +20,19 @@ yesterday. Decisions live in append-only stores outside the generated text, so a
 idempotent instead of destructive. An index is the source of truth, never the files. Everything
 runs end-to-end in CI with the network, the model and the credentials stubbed out.
 
+<p>
+  <a href="https://linkedin.com/in/pbairol"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white"></a>
+  <a href="https://pbairoliya.github.io"><img alt="Website" src="https://img.shields.io/badge/Website-111111?style=flat-square&logo=github&logoColor=white"></a>
+  <a href="mailto:pratik0520@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white"></a>
+  <img alt="AWS SAA" src="https://img.shields.io/badge/AWS%20Certified-Solutions%20Architect%20Associate-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white">
+</p>
+
+<img alt="GitHub stats" height="150" src="https://github-readme-stats.vercel.app/api?username=pbairoliya&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&theme=default#gh-light-mode-only">
+<img alt="Top languages" height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pbairoliya&layout=compact&hide_border=true&langs_count=8&theme=default#gh-light-mode-only">
+<img alt="GitHub stats" height="150" src="https://github-readme-stats.vercel.app/api?username=pbairoliya&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&theme=dark&bg_color=0d1117#gh-dark-mode-only">
+<img alt="Top languages" height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pbairoliya&layout=compact&hide_border=true&langs_count=8&theme=dark&bg_color=0d1117#gh-dark-mode-only">
+
+
 ---
 
 **[On-device tools](https://pbairoliya.github.io/projects/on-device-tools.html)** — three programs
@@ -46,9 +59,28 @@ solutions, 2023–2024
 
 ---
 
-`Go` `Python` `Java` `TypeScript` &nbsp;·&nbsp; `Kubernetes` `Temporal` `Docker` `Terraform`
-`Argo CD` `Helm` &nbsp;·&nbsp; `AWS (EMR, S3, DynamoDB)` `Hive` `Databricks` `Spark` `Neo4j`
-&nbsp;·&nbsp; `OpenTelemetry` `Splunk`
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Java](https://img.shields.io/badge/Java-E76F00?style=flat-square&logo=openjdk&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+![Temporal](https://img.shields.io/badge/Temporal-000000?style=flat-square&logo=temporal&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
+![Argo CD](https://img.shields.io/badge/Argo%20CD-EF7B4D?style=flat-square&logo=argo&logoColor=white)
+![Helm](https://img.shields.io/badge/Helm-0F1689?style=flat-square&logo=helm&logoColor=white)
+
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
+![Spark](https://img.shields.io/badge/Apache%20Spark-E25A1C?style=flat-square&logo=apachespark&logoColor=white)
+![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white)
+![Hive](https://img.shields.io/badge/Apache%20Hive-FDEE21?style=flat-square&logo=apachehive&logoColor=black)
+![Neo4j](https://img.shields.io/badge/Neo4j-4581C3?style=flat-square&logo=neo4j&logoColor=white)
+
+![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-000000?style=flat-square&logo=opentelemetry&logoColor=white)
+![Splunk](https://img.shields.io/badge/Splunk-000000?style=flat-square&logo=splunk&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white)
 
 AWS Certified Solutions Architect – Associate &nbsp;·&nbsp; B.S. Computer Science + B.S. Applied
 Mathematics, NC State (Park Scholar, 4.0)
