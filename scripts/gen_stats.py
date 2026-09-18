@@ -156,6 +156,36 @@ def svg_stack(theme, path):
 </svg>''')
 
 
+# The header strip. Generated rather than pulled from shields.io so it matches the
+# other cards, survives their rate limits, and doesn't look like every other profile.
+FACTS = [
+    ("99M+", "accounts closed nightly"),
+    ("1.668s", "max-subarray on CUDA"),
+    ("600+", "LeetCode solved"),
+    ("4.0", "NC State, Park Scholar"),
+]
+
+
+def svg_facts(theme, path):
+    w, h, pad = 760, 62, 2
+    x = pad
+    cells = []
+    for big, small in FACTS:
+        bw = max(len(big) * 11.5 + 24, len(small) * 6.15 + 24)
+        cells.append(
+            f'<g transform="translate({x:.1f},0)">'
+            f'<rect x="0" y="4" width="{bw:.1f}" height="{h - 12}" rx="10" fill="none" stroke="{theme["line"]}"/>'
+            f'<text x="{bw / 2:.1f}" y="27" text-anchor="middle" font-size="19" font-weight="650" '
+            f'fill="{theme["accent"]}">{big}</text>'
+            f'<text x="{bw / 2:.1f}" y="43" text-anchor="middle" font-size="10.5" '
+            f'fill="{theme["dim"]}">{small}</text></g>')
+        x += bw + 10
+    open(path, "w").write(f'''<svg xmlns="http://www.w3.org/2000/svg" width="{x - 10:.0f}" height="{h}" viewBox="0 0 {x - 10:.0f} {h}" role="img" aria-label="{"; ".join(f"{b} {s}" for b, s in FACTS)}">
+<style>text {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }}</style>
+{"".join(cells)}
+</svg>''')
+
+
 def main():
     rows = contributions()
     langs, repo_count = languages()
@@ -163,6 +193,7 @@ def main():
         svg_contributions(rows, theme, f"generated/contributions-{suffix}.svg")
         svg_languages(langs, repo_count, theme, f"generated/languages-{suffix}.svg")
         svg_stack(theme, f"generated/stack-{suffix}.svg")
+        svg_facts(theme, f"generated/facts-{suffix}.svg")
     print("contributions:", ", ".join(f"{y}={n}" for y, n in rows))
     print("languages:", ", ".join(f"{n} {f * 100:.0f}%" for n, _, f in langs))
 
