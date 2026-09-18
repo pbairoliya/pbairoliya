@@ -72,11 +72,28 @@ Robotics into NC schools, and captained team 6908 before that. I went to NC Stat
 Scholarship, came out with degrees in CS and applied math, and still run the Krispy Kreme Challenge
 every year, which involves a dozen donuts and questionable judgment.
 
-**Right now**
+**What I'm building next**
 
-Learning the parts of the stack I only half know: writing a log-structured key-value store to
-understand what a database is actually doing, and reading enough Raft to stop hand-waving about
-consensus. Both will end up in here when they're worth showing.
+Publicly, so I actually do it. Each one exists to answer a question I can't yet answer properly
+in an interview.
+
+| | The question it answers |
+|---|---|
+| A log-structured key-value store, in Go | What is a database actually doing when I call `put`? Append-only log, in-memory index, compaction, then a WAL and crash recovery — killing the process mid-write until it stops losing data. |
+| Raft — leader election and log replication | I can describe consensus. I want to have implemented it. |
+| An idempotent job queue with exactly-once delivery | My day job in miniature, small enough to explain in ten minutes. |
+| A CDC pipeline — Postgres WAL to a stream to a sink | The thing every company has and nobody's is clean. |
+| A write-up of the nightly close | The most interesting system I work on has no public explanation. That's a gap in this page, not in the system. |
+
+**Where I'm contributing**
+
+Go and Python infrastructure, because that's what I read all day anyway:
+[ollama](https://github.com/ollama/ollama) (Go, and I depend on it),
+[opentelemetry-go](https://github.com/open-telemetry/opentelemetry-go) and the
+[collector](https://github.com/open-telemetry/opentelemetry-collector-contrib),
+[temporal](https://github.com/temporalio/sdk-go),
+[argo-cd](https://github.com/argoproj/argo-cd). Docs and reproducible bug reports first — the
+boring contributions are the ones maintainers actually want.
 
 <img alt="Stack" src="https://raw.githubusercontent.com/pbairoliya/pbairoliya/main/generated/stack-light.svg#gh-light-mode-only" width="430">
 <img alt="Stack" src="https://raw.githubusercontent.com/pbairoliya/pbairoliya/main/generated/stack-dark.svg#gh-dark-mode-only" width="430">
