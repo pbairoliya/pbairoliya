@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="480" height="132" viewBox="0 0 480 132" role="img" aria-label="Languages by repository count">
 <style>text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }</style>
 <text x="16" y="24" font-size="12" font-weight="600" fill="#1f2328">Languages</text>
-<text x="16" y="42" font-size="11" fill="#59636e">share of 20 repositories</text>
+<text x="16" y="42" font-size="11" fill="#59636e">share of 21 repositories</text>
 <rect x="16.0" y="44" width="182.5" height="10" fill="#3572A5"/><rect x="198.5" y="44" width="99.6" height="10" fill="#e34c26"/><rect x="298.1" y="44" width="66.4" height="10" fill="#663399"/><rect x="364.4" y="44" width="49.8" height="10" fill="#f1e05a"/><rect x="414.2" y="44" width="33.2" height="10" fill="#f34b7d"/><rect x="447.4" y="44" width="16.6" height="10" fill="#b07219"/>
 <circle cx="20" cy="74" r="4.5" fill="#3572A5"/><text x="31" y="78" font-size="11" fill="#1f2328">Python<tspan fill="#59636e"> 41%</tspan></text><circle cx="172" cy="74" r="4.5" fill="#e34c26"/><text x="183" y="78" font-size="11" fill="#1f2328">HTML<tspan fill="#59636e"> 22%</tspan></text><circle cx="324" cy="74" r="4.5" fill="#663399"/><text x="335" y="78" font-size="11" fill="#1f2328">CSS<tspan fill="#59636e"> 15%</tspan></text><circle cx="20" cy="98" r="4.5" fill="#f1e05a"/><text x="31" y="102" font-size="11" fill="#1f2328">JavaScript<tspan fill="#59636e"> 11%</tspan></text><circle cx="172" cy="98" r="4.5" fill="#f34b7d"/><text x="183" y="102" font-size="11" fill="#1f2328">C++<tspan fill="#59636e"> 7%</tspan></text><circle cx="324" cy="98" r="4.5" fill="#b07219"/><text x="335" y="102" font-size="11" fill="#1f2328">Java<tspan fill="#59636e"> 4%</tspan></text>
 </svg>

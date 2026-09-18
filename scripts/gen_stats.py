@@ -116,12 +116,51 @@ def svg_languages(langs, repo_count, theme, path):
 </svg>''')
 
 
+# Grouped by what the thing does, not by a flat alphabetical list. Order inside
+# each row is roughly how central it is to my day job.
+STACK = [
+    ("Languages", ["Go", "Python", "Java", "SQL", "TypeScript", "C++"]),
+    ("Platform", ["Kubernetes", "Temporal", "Docker", "Terraform", "Argo CD", "Helm", "AWS"]),
+    ("Data", ["Spark", "Databricks", "Hive", "EMR", "DynamoDB", "Neo4j"]),
+    ("Observability", ["OpenTelemetry", "Splunk"]),
+]
+
+
+def svg_stack(theme, path):
+    w, pad, row_h = 480, 16, 26
+    y = pad + 30
+    rows = []
+    for label, items in STACK:
+        rows.append(f'<text x="{pad}" y="{y + 12}" font-size="10" font-weight="600" '
+                    f'letter-spacing="0.4" fill="{theme["dim"]}">{esc(label.upper())}</text>')
+        x = pad + 92
+        for item in items:
+            tw = 7.2 * len(item) + 16
+            if x + tw > w - pad:          # wrap rather than run off the card
+                y += row_h
+                x = pad + 92
+            rows.append(
+                f'<rect x="{x:.1f}" y="{y}" width="{tw:.1f}" height="19" rx="9.5" '
+                f'fill="none" stroke="{theme["line"]}"/>'
+                f'<text x="{x + tw / 2:.1f}" y="{y + 13.5}" text-anchor="middle" font-size="10.5" '
+                f'fill="{theme["fg"]}">{esc(item)}</text>')
+            x += tw + 6
+        y += row_h + 6
+    h = y + 4
+    open(path, "w").write(f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Stack">
+<style>text {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }}</style>
+<text x="{pad}" y="{pad + 8}" font-size="12" font-weight="600" fill="{theme["fg"]}">Stack</text>
+{"".join(rows)}
+</svg>''')
+
+
 def main():
     rows = contributions()
     langs, repo_count = languages()
     for theme, suffix in ((LIGHT, "light"), (DARK, "dark")):
         svg_contributions(rows, theme, f"generated/contributions-{suffix}.svg")
         svg_languages(langs, repo_count, theme, f"generated/languages-{suffix}.svg")
+        svg_stack(theme, f"generated/stack-{suffix}.svg")
     print("contributions:", ", ".join(f"{y}={n}" for y, n in rows))
     print("languages:", ", ".join(f"{n} {f * 100:.0f}%" for n, _, f in langs))
 
