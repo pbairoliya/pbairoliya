@@ -16,6 +16,12 @@ up — calendar, email, texts, one page. It runs entirely on my laptop, because 
 ship my iMessage history to somebody's API. The tricky part wasn't the model, it was making it
 boring: if it misses a night and runs twice, you get the same note, not two.
 
+[statement-fetcher](https://pbairoliya.github.io/projects/statement-fetcher.html) logs into my
+banks, downloads new statements, and files them where my archive already expects them — right
+account, right year, right filename. It worked on day one, and then I spent a lot longer on the
+part that matters: what happens on the second run, and what happens when you restructure 161 files
+that are already on disk.
+
 [grocery-receipts](https://github.com/pbairoliya/grocery-receipts) started because I kept buying
 cumin I already had. Photograph a receipt, it reads it, sorts the groceries, tracks what's about to
 expire, and refuses to count the same receipt twice no matter how many times I scan it.
